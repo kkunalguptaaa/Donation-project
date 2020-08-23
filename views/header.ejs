@@ -1,0 +1,29 @@
+<header style="width: 100%;">
+    <nav class="navbar navbar-expand  navbar-dark fixed-top d-flex flex-sm-row flex-column pb-3">  
+      <a class="navbar-brand justify-content-start" href="/" style="font-size: 20px;">Sai Sanjeevani Charitable Trust </a>
+        <div class="navbar-nav d-flex justify-content-center">
+          <a class="nav-item nav-link active btn btn-primary donate-btn" style="font-size: 14px;" href="#donation-section">Donate Now <span class="sr-only">(current)</span></a>
+        </div>
+    </nav>
+</header>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                $("nav ul").toggleClass("showing");
+            });
+    });
+
+    // Scrolling Effect
+
+    $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                $('nav').addClass('black');
+            }
+
+            else {
+                $('nav').removeClass('black');
+            }
+    })
+</script>
